@@ -7,12 +7,14 @@
 void check_oddEven();
 void simple_calculator();
 void square_number();
+void print_mul_tables();
 
 int main(){
 
 	//check_oddEven();
 	//simple_calculator();
-	square_number();
+	//square_number();
+	print_mul_tables();
 	return 0;
 }
 
@@ -77,5 +79,20 @@ void square_number(){
 		printf("Number=%d and its square=%d\n", num, sqr);
 		num+= 1;
 	}
+}
 
+
+
+
+void print_mul_tables(){
+
+	int num, i;
+
+	for(num = 2; num <= 10; num++){
+		printf("\n\nTable of %d\n", num);
+		for(i = 1; i<=10; i++){
+			printf("\n%d * %d = %d", num, i, num*i);
+		}
+	}
+	printf("\n");
 }
