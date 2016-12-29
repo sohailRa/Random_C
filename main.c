@@ -6,11 +6,13 @@
 
 void check_oddEven();
 void simple_calculator();
+void square_number();
 
 int main(){
 
 	//check_oddEven();
-	simple_calculator();
+	//simple_calculator();
+	square_number();
 	return 0;
 }
 
@@ -61,6 +63,19 @@ void simple_calculator(){
 			break;
 		default:
 			printf("\nThis operaton is not possible\n");
+	}
+
+}
+
+void square_number(){
+
+	int num = 1;
+	int sqr;
+
+	while(num <= 10){
+		sqr = num * num;
+		printf("Number=%d and its square=%d\n", num, sqr);
+		num+= 1;
 	}
 
 }
