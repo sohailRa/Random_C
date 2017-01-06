@@ -18,6 +18,7 @@ int main(void){
 }
 
 int getlines(char line[], int size){
+	
 	int len;
 	char c;
 
