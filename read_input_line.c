@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 #define MAXBUF 128
 
 int getlines(char line[], int size);
